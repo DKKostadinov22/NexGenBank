@@ -1,0 +1,115 @@
+p, h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.main_f
+{
+    text-align: center;
+    font-size: 62px;
+    margin-top: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main_f2
+{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.intro
+{
+    width: 50%;
+    margin-left: 7%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.lms
+{
+    width: 50%;
+    margin-left: 43%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.images > img
+{
+    width: 640px;
+    height: 360px;
+    margin-top: 3%;
+    margin-left: 7%;
+    border-radius: 20px;
+}
+
+.images > .img2
+{
+    margin-left: 50%;
+}
+
+.images > p
+{
+    margin-left: 16%;
+    font-size: 12px;
+    color: gray;
+}
+
+.images > .p2
+{
+    margin-left: 64%;
+}
+
+.images > .p3
+{
+    margin-left: 21.5%;
+}
+
+.ld
+{
+    width: 50%;
+    margin-left: 7%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.ld > img
+{
+    border-radius: 550px;
+    width: 212px;
+    height: 212px;
+    margin-left: 110%;
+    margin-top: -20%;
+}
+
+.pld
+{
+    margin-left: 54%;
+    margin-top: -4%;
+    font-size: 12px;
+    color: gray;
+}
+
+.contact
+{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+}
+
+.logo
+{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5%;
+    margin-left: 24%;
+}
+
+footer 
+{
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 10%;
+}
