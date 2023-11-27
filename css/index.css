@@ -1,0 +1,23 @@
+.navbar-brand
+{
+    color: #0C5600;
+    font-size: 36px;
+}
+#navbarNav
+{
+    font-size: 32px;
+    color: #0C5600;
+    display: flex; /* Adding display: flex to enable flexbox */
+    align-items: end; /* Align items vertically in the center */
+    justify-content: flex-end; /* Align items horizontally to the left */
+
+}      
+
+.nav-item
+{
+    margin-left: 152px;
+}
+#nav-item-icon
+{
+    margin-right: 52px;
+}
