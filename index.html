@@ -50,14 +50,20 @@
           <h1 style="font-weight: bold;">Login</h1>
           <hr>
 
-          <input type="text" placeholder="Email or phone" name="email" id="email-phone" required>
+          <form action="./php/login.php" method="post">
+
+          <input type="text" placeholder="Email" name="email" id="email" required>
           <br><br>
 
           <input type="password" placeholder="Password" name="pass" id="pass" required>
           <br>
+
           <a href="#" class="card-link" id="fp" style="font-weight: bold;">Forgot password</a>
           <br>
+
           <button type="submit" class="registerbtn" >Log in</button>
+          </form>
+
           <br><br>
           <p id="or"><span>or</span></p>
           <a href="./html/Register.html" class="card-link">Create an Account</a>

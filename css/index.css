@@ -43,7 +43,7 @@ body
     border-radius: 20px;
 }
 
-#email-phone, #pass
+#email, #pass
 {
     width: 24vw;
     height: 5vh;
