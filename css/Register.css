@@ -34,16 +34,15 @@ body
 
 #card-body
 {
-    position: absolute;
-    margin-left: 4vw;
-    margin-right: 70vw;
+    margin-left: 29vw;
+    margin-right: 29vw;
     margin-top: 10vh;
-    width: 30vw;
-    height: 63vh;
+    width: 42vw;
+    height: 120vh;
     border-radius: 20px;
 }
 
-#email-phone, #pass
+input
 {
     width: 24vw;
     height: 5vh;
@@ -84,6 +83,17 @@ body
     padding: 12px;
 }
 
+#gender
+{
+    width: 24vw;
+    height: 5vh;
+    border-radius: 20px;
+    border-color: #A9A9A9;
+
+    font-size: 20px;
+    padding-left: 1vw;
+    color: #003308;
+}
 #or 
 {
     width: 100%;
