@@ -52,7 +52,7 @@
 <!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
             NextGenBank
           </a>
@@ -64,12 +64,6 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  aria-current="page" href="../html/Exchange.html">Exchange</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/Transfer.html">Transfer</a>
               </li>
               <li class="nav-item" id="nav-item-icon">
                 <img src="../images/pngegg.png">
@@ -131,7 +125,7 @@
         </div>
       
         <div class="container signin">
-          <p>Already have an account? <a href="#" class="card-link">Sign in</a>.</p>
+          <p>Already have an account? <a href="../index.html" class="card-link">Sign in</a>.</p>
         </div>
       </form> 
     </div>
@@ -162,7 +156,7 @@
 <!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
             NextGenBank
           </a>
@@ -174,12 +168,6 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  aria-current="page" href="../html/Exchange.html">Exchange</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/Transfer.html">Transfer</a>
               </li>
               <li class="nav-item" id="nav-item-icon">
                 <img src="../images/pngegg.png">
@@ -241,7 +229,7 @@
         </div>
       
         <div class="container signin">
-          <p>Already have an account? <a href="#" class="card-link">Sign in</a>.</p>
+          <p>Already have an account? <a href="../index.html" class="card-link">Sign in</a>.</p>
         </div>
       </form> 
     </div>
@@ -272,7 +260,7 @@
 <!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
             NextGenBank
           </a>
@@ -284,12 +272,6 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  aria-current="page" href="../html/Exchange.html">Exchange</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/Transfer.html">Transfer</a>
               </li>
               <li class="nav-item" id="nav-item-icon">
                 <img src="../images/pngegg.png">
@@ -351,7 +333,7 @@
         </div>
       
         <div class="container signin">
-          <p>Already have an account? <a href="#" class="card-link">Sign in</a>.</p>
+          <p>Already have an account? <a href="../index.html" class="card-link">Sign in</a>.</p>
         </div>
       </form> 
     </div>
@@ -382,7 +364,7 @@
 <!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
             NextGenBank
           </a>
@@ -394,12 +376,6 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  aria-current="page" href="../html/Exchange.html">Exchange</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/Transfer.html">Transfer</a>
               </li>
               <li class="nav-item" id="nav-item-icon">
                 <img src="../images/pngegg.png">
@@ -461,7 +437,7 @@
         </div>
       
         <div class="container signin">
-          <p>Already have an account? <a href="#" class="card-link">Sign in</a>.</p>
+          <p>Already have an account? <a href="../index.html" class="card-link">Sign in</a>.</p>
         </div>
       </form> 
     </div>
@@ -492,7 +468,7 @@
 <!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
             NextGenBank
           </a>
@@ -504,12 +480,6 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  aria-current="page" href="../html/Exchange.html">Exchange</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/Transfer.html">Transfer</a>
               </li>
               <li class="nav-item" id="nav-item-icon">
                 <img src="../images/pngegg.png">
@@ -571,7 +541,7 @@
         </div>
       
         <div class="container signin">
-          <p>Already have an account? <a href="#" class="card-link">Sign in</a>.</p>
+          <p>Already have an account? <a href="../index.html" class="card-link">Sign in</a>.</p>
         </div>
       </form> 
     </div>
@@ -602,7 +572,7 @@
 <!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
             NextGenBank
           </a>
@@ -614,12 +584,6 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  aria-current="page" href="../html/Exchange.html">Exchange</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/Transfer.html">Transfer</a>
               </li>
               <li class="nav-item" id="nav-item-icon">
                 <img src="../images/pngegg.png">
@@ -681,7 +645,7 @@
         </div>
       
         <div class="container signin">
-          <p>Already have an account? <a href="#" class="card-link">Sign in</a>.</p>
+          <p>Already have an account? <a href="../index.html" class="card-link">Sign in</a>.</p>
         </div>
       </form> 
     </div>
@@ -712,7 +676,7 @@
 <!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
             NextGenBank
           </a>
@@ -724,12 +688,6 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  aria-current="page" href="../html/Exchange.html">Exchange</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/Transfer.html">Transfer</a>
               </li>
               <li class="nav-item" id="nav-item-icon">
                 <img src="../images/pngegg.png">
@@ -791,7 +749,7 @@
         </div>
       
         <div class="container signin">
-          <p>Already have an account? <a href="#" class="card-link">Sign in</a>.</p>
+          <p>Already have an account? <a href="../index.html" class="card-link">Sign in</a>.</p>
         </div>
       </form> 
     </div>
@@ -825,7 +783,7 @@
 <!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
             NextGenBank
           </a>
@@ -837,12 +795,6 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  aria-current="page" href="../html/Exchange.html">Exchange</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/Transfer.html">Transfer</a>
               </li>
               <li class="nav-item" id="nav-item-icon">
                 <img src="../images/pngegg.png">
@@ -904,7 +856,7 @@
         </div>
       
         <div class="container signin">
-          <p>Already have an account? <a href="#" class="card-link">Sign in</a>.</p>
+          <p>Already have an account? <a href="../index.html" class="card-link">Sign in</a>.</p>
         </div>
       </form> 
     </div>
