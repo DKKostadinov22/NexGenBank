@@ -39,7 +39,7 @@ body
     margin-right: 70vw;
     margin-top: 10vh;
     width: 30vw;
-    height: 63vh;
+    height: 69vh;
     border-radius: 20px;
 }
 
@@ -58,7 +58,7 @@ body
 .card-link
 {
     margin-top: 1vh;
-    margin-bottom: 3vh;
+    margin-bottom: 1.5vh;
     color: #003308;
     font-size: 20px;
     text-decoration: none;
@@ -71,7 +71,7 @@ body
 
 .registerbtn
 {
-    margin-top: 19vh;
+    margin-top: 14vh;
     
     width: 27vw;
     height: 6vh;

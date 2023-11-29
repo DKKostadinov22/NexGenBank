@@ -811,7 +811,7 @@
         <div class="container">
           <h1>Register</h1>
           <p>Please fill in this form to create an account.</p>
-          <h3>Registration Successfully</h3>
+          <h3>Registration Successful!</h3>
           <hr>
       
           <label for="first_name"></label>
