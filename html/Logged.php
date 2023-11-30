@@ -26,7 +26,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./Logged.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="./Logged.php">Home</a>
               </li>
               <li class="nav-item" id="nav-item-icon">
                 <img src="../images/pngegg.png">
@@ -37,7 +37,19 @@
   </nav>
 
   <!--Login Card-->
-  <h1>Logged in</h1>
+  <h1>Logged in as: </h1>
+  <?php
+  session_start();
+  $iban = $_SESSION['user_iban'];
+  $email = $_SESSION['user_email'];
+  $bal = $_SESSION['user_bal'];
+  echo $email;
+  echo "<br> <h1>IBAN: </h1>";
+  echo $iban;
+  echo "<br> <h1>Balance: </h1>";
+  echo $bal;
+  ?>
+  <br>
   <a href="../index.html">Log out</a>
 
 </body>

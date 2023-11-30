@@ -21,8 +21,20 @@ session_start();
 
     if ($result->num_rows == 1) 
     {
+        $user = $result->fetch_assoc();
+
+        // Store the IBAN in a session variable
+        $_SESSION['user_iban'] = $user['iban'];
+        $_SESSION['user_email'] = $user['email'];
+        $_SESSION['user_bal'] = $user['bal'];
+  
+        // Assign the IBAN to a variable for future use in this script
+        $iban = $user['iban'];
+  
+        $bal = $user['bal'];
+
         //Redirect to a page where you are logged in and site functions
-        header("Location: ../html/Logged.html");
+        header("Location: ../html/Logged.php");
     }
      else 
     {

@@ -16,6 +16,18 @@
     $pass = $_POST['pass'];
     $pass_repeat = $_POST['pass_repeat'];
 
+    // Function to generate a random IBAN
+    function generateRandomIBAN() 
+    {
+    $countryCode = "BG"; // Change to appropriate country code
+    $randomNumbers = str_pad(random_int(0, 99999999), 8, '0', STR_PAD_LEFT);
+    $iban = $countryCode . $randomNumbers;
+    return $iban;
+    }
+
+    $iban = generateRandomIBAN(); // Generate IBAN
+    $bal = 0;
+
     //Checks to see if username, email or phone number already exist in the db
     $check = mysqli_query($conn, "SELECT * FROM `users` WHERE username = '$username'");
     $check2 = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email'");
@@ -761,8 +773,8 @@
     }
     else
     {
-        $stmt = $conn->prepare("INSERT INTO users (first_name, last_name, gender, phone_number, username, email, pass) VALUES (?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssssss", $first_name, $last_name, $gender, $phone_number, $username, $email, $pass);
+        $stmt = $conn->prepare("INSERT INTO users (first_name, last_name, gender, phone_number, username, email, pass, iban, bal) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssssssi", $first_name, $last_name, $gender, $phone_number, $username, $email, $pass, $iban, $bal);
         $stmt->execute();
         echo
         '
