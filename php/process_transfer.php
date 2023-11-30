@@ -13,7 +13,7 @@ $loggedInUserEmail = $_SESSION['user_email'];
 $iban = $_POST['iban'];
 $amount = $_POST['amount'];
 
-// Retrieve sender's balance
+//Get sender's balance from DB
 $senderQuery = "SELECT bal FROM users WHERE email = ?";
 $senderStmt = $conn->prepare($senderQuery);
 $senderStmt->bind_param('s', $loggedInUserEmail);
@@ -23,12 +23,12 @@ $senderResult = $senderStmt->get_result();
 if ($senderResult->num_rows == 1) 
 {
     $sender = $senderResult->fetch_assoc();
-    $senderBalance = $sender['bal']; // Get the sender's balance
+    $senderBalance = $sender['bal']; //Store the sender's balance
 }
 
-$senderStmt->close();
+$senderStmt->close(); //Close the sender statement
 
-// Check if the sender has sufficient balance
+//Check if the sender has sufficient balance
 if ($senderBalance >= $amount) 
 {
     $receiverQuery = "SELECT bal FROM users WHERE iban = ?";
@@ -40,30 +40,62 @@ if ($senderBalance >= $amount)
     if ($receiverResult->num_rows == 1) 
     {
         $receiver = $receiverResult->fetch_assoc();
-        $receiverBalance = $receiver['bal']; // Get the receiver's balance
+        $receiverBalance = $receiver['bal']; //Store the receiver's balance
     }
 
-    $receiverStmt->close();
+    $receiverStmt->close(); //Close the receiver statement
 
-    // Update sender's balance after the transfer
+    //Update sender's balance after the transfer
     $updateSenderQuery = "UPDATE users SET bal = bal - ? WHERE email = ?";
     $updateSenderStmt = $conn->prepare($updateSenderQuery);
     $updateSenderStmt->bind_param('is', $amount, $loggedInUserEmail);
     $updateSenderStmt->execute();
 
-    // Update receiver's balance after the transfer
+    //Update receiver's balance after the transfer
     $updateReceiverQuery = "UPDATE users SET bal = bal + ? WHERE iban = ?";
     $updateReceiverStmt = $conn->prepare($updateReceiverQuery);
     $updateReceiverStmt->bind_param('is', $amount, $iban);
     $updateReceiverStmt->execute();
+
+    ////////////////////////////////////////////////////////////
+
+    //Retrieve updated sender's balance, so it can update the variable in logged.php
+    $updatedSenderQuery = "SELECT bal FROM users WHERE email = ?";
+    $updatedSenderStmt = $conn->prepare($updatedSenderQuery);
+    $updatedSenderStmt->bind_param('s', $loggedInUserEmail);
+    $updatedSenderStmt->execute();
+    $updatedSenderResult = $updatedSenderStmt->get_result();
+
+    if ($updatedSenderResult->num_rows == 1) 
+    {
+        $updatedSender = $updatedSenderResult->fetch_assoc();
+        $_SESSION['user_bal'] = $updatedSender['bal']; //Update session variable with the updated balance
+    }
+
+    ////////////////////////////////////////////////////////////
+
+    $updatedReceiverQuery = "SELECT bal FROM users WHERE email = ?";
+    $updatedReceiverStmt = $conn->prepare($updatedReceiverQuery);
+    $updatedReceiverStmt->bind_param('s', $loggedInUserEmail);
+    $updatedReceiverStmt->execute();
+    $updatedReceiverResult = $updatedReceiverStmt->get_result();
+
+    if ($updatedReceiverResult->num_rows == 1) 
+    {
+        $updatedReceiver = $updatedReceiverResult->fetch_assoc();
+        $_SESSION['user_bal'] = $updatedReceiver['bal']; //Update session variable with the updated balance
+    }
+
+    ////////////////////////////////////////////////////////////
+
+    $updatedSenderStmt->close();//Close the statement
 
     // Redirect to a success page after transfer
     header("Location: ./transfer_success.php");
 } 
 else 
 {
-    // Insufficient balance, redirect to a failure page
-    header("Location: ./transfer_failure.php");
+
 }
 
 $updateSenderStmt->close();

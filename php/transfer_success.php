@@ -42,7 +42,7 @@
         setTimeout(function() 
         {
             window.location.href = "./Logged.php";
-        }, 6000); // 6000 milliseconds = 6 seconds
+        }, 2500); // 2500ms = 2,5s
     </script>
 
 </body>
