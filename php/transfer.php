@@ -38,7 +38,7 @@ $stmt->close();
 </head>
 <body>
     <!-- Your existing HTML content -->
-    <form action="../php/process_transfer.php" method="post">
+    <form action="./process_transfer.php" method="post">
         <label for="iban">Enter IBAN:</label>
         <input type="text" id="iban" name="iban" required>
         <br>
@@ -49,3 +49,26 @@ $stmt->close();
     </form>
 </body>
 </html>
+
+
+<?php
+    // Handle the balance update after transfer in process_transfer.php
+
+    // Check if transfer is successful and update the session variable
+    if (isset($_SESSION['transfer_successful']) && $_SESSION['transfer_successful']) {
+        // Retrieve the updated balance after transfer from the database
+        $query = "SELECT bal FROM users WHERE email = ?";
+        $stmt = $conn->prepare($query);
+        $stmt->bind_param('s', $loggedInUserEmail);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows == 1) {
+            $user = $result->fetch_assoc();
+            $_SESSION['user_bal'] = $user['bal']; // Update the session variable with the new balance
+        }
+
+        $stmt->close();
+        unset($_SESSION['transfer_successful']); // Unset the session variable for transfer success
+    }
+    ?>

@@ -53,7 +53,7 @@
   <br>
   <a href="../index.html">Log out</a> <br><br>
 
-  <form action="../php/transfer.php" method="post">
+  <form action="./transfer.php" method="post">
   <button type="submit">Transfer</button>
   </form>
 

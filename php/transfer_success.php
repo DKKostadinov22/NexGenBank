@@ -37,9 +37,14 @@
   </nav>
 
     <h1>Transfer success, redirecting...</h1>
-    <?php
-    header("Location: ./php/Logged.php");
-    ?>
+
+    <script>
+        setTimeout(function() 
+        {
+            window.location.href = "./Logged.php";
+        }, 6000); // 6000 milliseconds = 6 seconds
+    </script>
 
 </body>
 </html>
+

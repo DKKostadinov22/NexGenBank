@@ -58,12 +58,12 @@ if ($senderBalance >= $amount)
     $updateReceiverStmt->execute();
 
     // Redirect to a success page after transfer
-    header("Location: ../php/transfer_success.php");
+    header("Location: ./transfer_success.php");
 } 
 else 
 {
     // Insufficient balance, redirect to a failure page
-    header("Location: ../php/transfer_failure.php");
+    header("Location: ./transfer_failure.php");
 }
 
 $updateSenderStmt->close();
