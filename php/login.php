@@ -34,7 +34,7 @@ session_start();
         $bal = $user['bal'];
 
         //Redirect to a page where you are logged in and site functions
-        header("Location: ../html/Logged.php");
+        header("Location: ../php/Logged.php");
     }
      else 
     {

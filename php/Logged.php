@@ -48,6 +48,7 @@
   echo $iban;
   echo "<br> <h1>Balance: </h1>";
   echo $bal;
+  echo "<h6>BGN</h6> <br>"
   ?>
   <br>
   <a href="../index.html">Log out</a>
