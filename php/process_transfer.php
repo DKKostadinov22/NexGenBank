@@ -74,20 +74,6 @@ if ($senderBalance >= $amount)
 
     ////////////////////////////////////////////////////////////
 
-    $updatedReceiverQuery = "SELECT bal FROM users WHERE email = ?";
-    $updatedReceiverStmt = $conn->prepare($updatedReceiverQuery);
-    $updatedReceiverStmt->bind_param('s', $loggedInUserEmail);
-    $updatedReceiverStmt->execute();
-    $updatedReceiverResult = $updatedReceiverStmt->get_result();
-
-    if ($updatedReceiverResult->num_rows == 1) 
-    {
-        $updatedReceiver = $updatedReceiverResult->fetch_assoc();
-        $_SESSION['user_bal'] = $updatedReceiver['bal']; //Update session variable with the updated balance
-    }
-
-    ////////////////////////////////////////////////////////////
-
     $updatedSenderStmt->close();//Close the statement
 
     // Redirect to a success page after transfer
