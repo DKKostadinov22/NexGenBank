@@ -26,7 +26,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./Logged.php">Home</a>
+                <a class="nav-link active" aria-current="page" href="./Logged_verified.php">Home</a>
               </li>
               <li class="nav-item" id="nav-item-icon">
                 <img src="../images/pngegg.png">
@@ -43,29 +43,34 @@
 
   session_start();
 
-
-  
-  $iban = $_SESSION['user_iban'];
   $email = $_SESSION['user_email'];
-  $bal = $_SESSION['user_bal'];
 
   echo $email;
-  echo "<br> <h1>IBAN: </h1>";
-
-  echo $iban;
-  echo "<br> <h1>Balance: </h1>";
-
-  echo $bal;
-  echo "<h6>BGN</h6> <br>"
+  echo
+  '
+  <br>
+  '
 
   ?>
   
   <br>
   <a href="../index.html">Log out</a> <br><br>
+  <h2>Your account is not verified!</h2>
+  <h4>To unlock the full features, please submit a photo of your ID card, so we can verify your account.</h4>
+  <br><br>
 
-  <form action="./transfer.php" method="post">
-  <button type="submit">Transfer</button>
+  <form action="./verification.php">
+    <label>Choose a file:</label>
+    <input type="file" onchange="enableUpload()">
+    <input type="submit" value="Upload File" id="uploadButton" disabled>
   </form>
+
+  <script>
+    function enableUpload() 
+    {
+        uploadButton.disabled = false;
+    }
+  </script>
 
 </body>
 </html>

@@ -23,19 +23,23 @@ session_start();
     {
         $user = $result->fetch_assoc();
 
+        $verified = $user['verified'];
+
         //Store the IBAN in a session variable
         $_SESSION['user_iban'] = $user['iban'];
         $_SESSION['user_email'] = $user['email'];
         $_SESSION['user_bal'] = $user['bal'];
+        $_SESSION['user_verified'] = $user['user_verified'];
   
-        //Assign the IBAN to a variable
-        $iban = $user['iban'];
-  
-        //Assign the balance to a variable
-        $bal = $user['bal'];
-
-        //Redirect to a page where you are logged in and site functions
+        if ($verified == 0)
+        {
         header("Location: ../php/Logged.php");
+        }
+        else if ($verified == 1)
+        {
+        //Redirect to a page where you are logged in and verified
+        header("Location: ../php/Logged_verified.php");
+        }
     }
      else 
     {

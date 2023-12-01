@@ -36,7 +36,7 @@
         </div>
   </nav>
 
-    <h1>Transfer success, redirecting...</h1>
+    <h1>Identity verified, redirecting...</h1>
 
     <script>
         setTimeout(function() 
@@ -44,6 +44,29 @@
             window.location.href = "./Logged_verified.php";
         }, 2500); // 2500ms = 2,5s
     </script>
+
+<?php
+$conn = new mysqli('78.128.11.228', 'ngb', 'dbpass1234', 'ngb_db');
+
+if ($conn->connect_error) {
+    die('Connection Failed: ' . $conn->connect_error);
+}
+
+session_start();
+
+$verified = 1;
+
+$email = $_SESSION['user_email'];
+$stmt = $conn->prepare("UPDATE users SET verified = ? WHERE email = ?");
+$stmt->bind_param("is", $verified, $email);
+$stmt->execute();
+
+$stmt->close();
+$conn->close();
+?>
+
+
+
 
 </body>
 </html>

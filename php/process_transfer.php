@@ -40,7 +40,6 @@ if ($senderBalance >= $amount)
     if ($receiverResult->num_rows == 1) 
     {
         $receiver = $receiverResult->fetch_assoc();
-        $receiverBalance = $receiver['bal']; //Store the receiver's balance
     }
 
     $receiverStmt->close(); //Close the receiver statement
@@ -59,7 +58,7 @@ if ($senderBalance >= $amount)
 
     ////////////////////////////////////////////////////////////
 
-    //Retrieve updated sender's balance, so it can update the variable in logged.php
+    //Retrieve updated sender's balance, so it can update the variable in Logged_verified.php 
     $updatedSenderQuery = "SELECT bal FROM users WHERE email = ?";
     $updatedSenderStmt = $conn->prepare($updatedSenderQuery);
     $updatedSenderStmt->bind_param('s', $loggedInUserEmail);
