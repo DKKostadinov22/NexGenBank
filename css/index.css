@@ -13,6 +13,7 @@
 
 }      
 
+
 .nav-item
 {
     color: #0C5600;
@@ -25,12 +26,24 @@
 
 body
 {
-    background: rgb(0,224,36);
-    background: -moz-linear-gradient(90deg, rgba(0,224,36,1) 0%, rgba(0,51,8,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(0,224,36,1) 0%, rgba(0,51,8,1) 100%);
-    background: linear-gradient(90deg, rgba(0,224,36,1) 0%, rgba(0,51,8,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00e024",endColorstr="#003308",GradientType=1); 
+    background: rgb(0,51,8);
+    background: -moz-linear-gradient(90deg, rgba(0,51,8,1) 0%, rgba(0,224,36,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,51,8,1) 0%, rgba(0,224,36,1) 100%);
+    background: linear-gradient(90deg, rgba(0,51,8,1) 0%, rgba(0,224,36,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003308",endColorstr="#00e024",GradientType=1);
+    font-family: "Inter";
 }
+
+.gap
+{
+
+width: 100%;
+height: 20vh;
+
+background: #D9D9D9;
+margin-top: 38vh;
+}
+
 
 #card-body
 {
@@ -106,6 +119,7 @@ body
     width: 25.4vw;
     height: 64vh;
     z-index: -1;
+    
 
 }
     .elliplse_1
@@ -122,7 +136,9 @@ body
 
     background: #FFFFFF;
     color: #003308;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 8);
+    border: 1px solid #003308;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+
     }
     .elliplse_2
     {
@@ -138,33 +154,262 @@ body
     background: #003308;
     color: #ECECEC;
     z-index: 2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 8);
-    }
-    .elliplse_3
-    {
-      position: absolute;
-      width: 18vw;
-      height: 32vh;
-      border-radius: 50%;
+    border: 1px solid #003308;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
 
-      margin-left: 65vw;
-      margin-right: 16vw;
-      margin-top: 46vh;
+}
+.elliplse_3
+{
+position: absolute;
+width: 18vw;
+height: 32vh;
+border-radius: 50%;
 
-      background: #ECECEC;
-      color: #003308;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 8);
-      }
+margin-left: 65vw;
+margin-right: 16vw;
+margin-top: 46vh;
+
+background: #ECECEC;
+color: #003308;
+border: 1px solid #003308;
+box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+
+}
 
 
 .ellipse-text
 {
-    font-weight: bolder;
+    font-weight: 800;
     text-align: center; /* Center the text horizontally */
     display: flex;
     align-items: center; /* Center the text vertically */
     justify-content: center; /* Center the text horizontally */
     margin-top: 9vh;
 
-    font-size: 45px;
+    font-size: 28px;
 } 
+
+/* Rectangle 36 */
+.quote{
+position: absolute;
+width: 100%;
+height: 20vh;
+margin-top: 87vh;
+
+background: #ECECEC;
+}
+
+.quote-text
+{
+    position: absolute;
+    top: 38%;
+    left: 38%;
+    transform: translate(-30%, -30%);
+    z-index: 2;
+    
+
+    font-weight: bolder;
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    overflow: hidden;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+color: #003308;
+}
+
+
+#TW-quote
+{
+    margin-top: 135vh;
+    padding: 0px;
+}
+#TW-Picture
+{
+    width: 415px;
+    height: 415px;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.6);
+
+    margin-left: 7vw;
+    border-radius: 50%;
+
+    padding: 0px;
+
+    
+}
+
+#card-body-picture
+{
+    padding: 0px;
+    margin-left: 0.2vw;
+    margin-top: 0.2vw;
+
+    max-width: 415px;
+    max-height: 415px;
+}
+.card-body h1 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 44px;
+text-align: center;
+
+color: #FFFFFF;
+  }
+  
+  .card-body  h1::before,
+  .card-body  h1::after {
+    background-color: #FFFFFF;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+  }
+  
+  .card-body  h1::before {
+    right: 0.3em;
+    margin-left: -50%;
+  }
+  
+  .card-body h1::after {
+    left: 0.3em;
+    margin-right: -50%;
+  }
+
+.card-text
+{
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+}
+
+#TW-quote-text
+{
+    position: absolute;
+    width: 53vw;
+    height: 31vh;
+
+    margin-right: 25vw;
+    margin-top: 19vh;
+}
+
+.row
+{
+    max-width: 100%;
+}
+
+#text-line p {
+    font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+text-align: center;
+
+color: #FFFFFF;
+  }
+  
+  #text-line  p::before,
+  #text-line  p::after {
+    background-color: #FFFFFF;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 40%;
+  }
+  
+  #text-line  p::before {
+    right: 0.3em;
+    margin-left: -50%;
+  }
+  
+  #text-line p::after {
+    left: 0.3em;
+    margin-right: -50%;
+  }
+
+
+#review-cards
+{
+    margin-top: 27vh;
+    margin-left: 5vw;
+
+    max-width: 1720px;
+}
+
+
+#review-card
+{
+    width: 512px;
+    height: 629px;
+
+    background: #ECECEC;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-img-top
+{
+    max-width: 266px;
+    max-height: 67px;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-title
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#review-text
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #ACACAC;
+}
+
+.card-footer-image
+{
+    width: 65px;
+    height: 62px;
+}

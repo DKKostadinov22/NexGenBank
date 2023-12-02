@@ -12,6 +12,10 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
+<div class="background"></div>
+
+
+
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -41,7 +45,7 @@
     <div class="card-body">
       <form action="./php/login.php" method="post">
         <div class="container">
-          <h1 style="font-weight: bold;">Login</h1>
+          <h1 style="font-weight: bold; color: #003308;">Login</h1>
           <hr>
 
           <form action="./php/login.php" method="post">
@@ -73,6 +77,75 @@
   <div class="elliplse_2"><p class="ellipse-text">“NGB”</p></div>
   <div class="elliplse_3"><p class="ellipse-text">“Еasy and secure banking”</p></div>
 </div>
+
+<!--Quote 1 -->
+<div class="quote">
+  <h1 class="quote-text">"Banking on a sustainable future. Together, let's invest in a greener tomorrow."</h1>
+</div>
+
+<!--Timothy Wirth Quote-->
+<div class="row" id="TW-quote">
+  <div class="col-sm-5 mb-3 mb-sm-0">
+    <div class="card" id="TW-Picture">
+      <div class="card-body" id="card-body-picture">
+        <img src="./images/Timothy Wirth-modified 1.png">
+        <br><br>
+        <h1>Timothy Wirth</h1>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-5">
+    <div>
+      <div class="card-body" id="TW-quote-text">
+        <p class="card-text">“We've got to ride the global-warming issue. Even if the theory of global warming is wrong, we will be doing the right thing in terms of economic policy and environmental</p>
+        <div  id="text-line"> 
+          <p class="card-text"> policy.”</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Gap-->
+<div class="gap"></div>
+
+<!--Review Cards-->
+<div class="row row-cols-1 row-cols-md-3 g-5" id="review-cards">
+  <div class="col">
+    <div class="card h-100" id="review-card">
+      <img src="./images/zvezdi-removebg-preview 1.png" class="card-img-top" alt="...">
+      <div class="card-body" class="position-absolute top-0 start-0 translate-middle">
+        <h5 class="card-title" class="card text-center">Dimitar Dimitrov</h5>
+        <p class="card-text" id="review-text">Eco-banking's tech innovations make life easier and reduce environmental impact. I love it!</p>
+      </div>
+      <img class="card-footer-image" src="./images/logo_green.png">
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100" id="review-card">
+      <img src="./images/zvezdi-removebg-preview 1.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> Krasimir Ivanov</h5>
+        <p class="card-text" id="review-text">Switching to an eco-bank was a small step I could take to live more in line with my values. I want my financial choices to reflect my commitment to environmental and social responsibility.</p>
+      </div>
+      <img class="card-footer-image" src="./images/logo_green.png">
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100" id="review-card">
+      <img src="./images/zvezdi-removebg-preview 1.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Plamen Stoilov</h5>
+        <p class="card-text" id="review-text">Switching to an eco-bank aligns with my values of environmental and social responsibility.</p>
+      </div>
+        <img class="card-footer-image" src="./images/logo_green.png">
+    </div>
+  </div>
+</div>
+
+<!--Gap-->
+<div class="gap"></div>
 
 </body>
 </html>
