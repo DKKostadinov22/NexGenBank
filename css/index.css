@@ -1,3 +1,4 @@
+/* Navbar */
 .navbar-brand
 {
     color: #0C5600;
@@ -7,13 +8,11 @@
 {
     font-size: 32px;
     color: #0C5600;
-    display: flex; /* Adding display: flex to enable flexbox */
-    align-items: end; /* Align items vertically in the center */
-    justify-content: flex-end; /* Align items horizontally to the left */
+    display: flex; 
+    align-items: end;
+    justify-content: flex-end;
 
 }      
-
-
 .nav-item
 {
     color: #0C5600;
@@ -24,6 +23,7 @@
     margin-right: 52px;
 }
 
+/* Body */
 body
 {
     background: rgb(0,51,8);
@@ -34,6 +34,7 @@ body
     font-family: "Inter";
 }
 
+/* Gap */
 .gap
 {
 
@@ -44,7 +45,7 @@ background: #D9D9D9;
 margin-top: 38vh;
 }
 
-
+/* Login Card */
 #card-body
 {
     position: absolute;
@@ -55,7 +56,6 @@ margin-top: 38vh;
     height: 69vh;
     border-radius: 20px;
 }
-
 #email, #pass
 {
     width: 24vw;
@@ -67,7 +67,6 @@ margin-top: 38vh;
     padding-left: 1vw;
     color: #003308;
 }
-
 .card-link
 {
     margin-top: 1vh;
@@ -77,7 +76,6 @@ margin-top: 38vh;
     text-decoration: none;
 
 }
-
 .card-link:hover {
     text-decoration: underline;
   }
@@ -96,7 +94,6 @@ margin-top: 38vh;
     color: white;
     padding: 12px;
 }
-
 #or 
 {
     width: 100%;
@@ -106,13 +103,14 @@ margin-top: 38vh;
     line-height: 0.1em;
     margin: 10px 0 20px; 
 } 
- 
 #or span 
 { 
      background:#fff; 
      padding:0 10px; 
  }
 
+
+/* Ellipses */
  .ellipse_group
 {
     position: absolute;
@@ -180,16 +178,17 @@ box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
 .ellipse-text
 {
     font-weight: 800;
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
     display: flex;
-    align-items: center; /* Center the text vertically */
-    justify-content: center; /* Center the text horizontally */
+    align-items: center;
+    justify-content: center;
     margin-top: 9vh;
 
     font-size: 28px;
 } 
 
-/* Rectangle 36 */
+
+/* Quote1 */
 .quote{
 position: absolute;
 width: 100%;
@@ -198,7 +197,6 @@ margin-top: 87vh;
 
 background: #ECECEC;
 }
-
 .quote-text
 {
     position: absolute;
@@ -209,10 +207,10 @@ background: #ECECEC;
     
 
     font-weight: bolder;
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
     display: flex;
-    align-items: center; /* Center the text vertically */
-    justify-content: center; /* Center the text horizontally */
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 
     font-family: 'Inter';
@@ -224,6 +222,7 @@ color: #003308;
 }
 
 
+/* TW-quote */
 #TW-quote
 {
     margin-top: 135vh;
@@ -242,7 +241,6 @@ color: #003308;
 
     
 }
-
 #card-body-picture
 {
     padding: 0px;
@@ -346,6 +344,7 @@ color: #FFFFFF;
   }
 
 
+  /* Review Cards */
 #review-cards
 {
     margin-top: 27vh;
@@ -353,8 +352,6 @@ color: #FFFFFF;
 
     max-width: 1720px;
 }
-
-
 #review-card
 {
     width: 512px;
@@ -370,7 +367,6 @@ color: #FFFFFF;
     justify-content: center;
 
 }
-
 .card-img-top
 {
     max-width: 266px;
@@ -382,7 +378,6 @@ color: #FFFFFF;
     justify-content: center;
 
 }
-
 .card-title
 {
     font-family: 'Inter';
@@ -396,7 +391,6 @@ color: #FFFFFF;
     align-items: center;
     justify-content: center;
 }
-
 #review-text
 {
     font-family: 'Inter';
@@ -407,7 +401,6 @@ color: #FFFFFF;
 
     color: #ACACAC;
 }
-
 .card-footer-image
 {
     width: 65px;
