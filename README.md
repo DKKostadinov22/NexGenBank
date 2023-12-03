@@ -17,6 +17,7 @@
 <p align="left">
     <a href="https://en.wikipedia.org/wiki/HTML"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="HTML logo" width="50px" height = "50px"/></a>
     <a href="https://en.wikipedia.org/wiki/CSS"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png" alt="CSS logo" width="38px" height = "50px"/></a>
+    <a href="https://en.wikipedia.org/wiki/PHP"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1280px-PHP-logo.svg.png" alt="PHP Logo" width="60x" height = "40px"/></a>
     
 </p>
 <h3> Used applications for the documentation and presentation:</h3>
