@@ -26,7 +26,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./Logged_verified.php">Home</a>
+                <a class="nav-link active" aria-current="page" href="../php/Logged_verified.php">Home</a>
               </li>
               <li class="nav-item" id="nav-item-icon">
                 <img src="../images/pngegg.png">
@@ -36,41 +36,15 @@
         </div>
   </nav>
 
-  <!--Login Card-->
-  <h1>Logged in as: </h1>
+    <h1>Transfer success, redirecting...</h1>
 
-  <?php
-
-  session_start();
-
-  $iban = $_SESSION['user_iban'];
-  $email = $_SESSION['user_email'];
-  $bal = $_SESSION['user_bal'];
-
-  echo $email;
-  echo "<br> <h1>IBAN: </h1>";
-
-  echo $iban;
-  echo "<br> <h1>Balance: </h1>";
-
-  echo $bal;
-  echo "<h6>BGN</h6> <br>"
-
-  ?>
-  
-  <br>
-  <a href="../index.html">Log out</a> <br><br>
-
-  <form action="./transfer.php" method="post">
-  <button type="submit">Transfer</button>
-  </form>
-
-  <br>
-
-  <form action="./add.php" method="post">
-  <h3>If you want to add more than 1000 BGN, please contact us!</h3>
-  <button type="submit">Add Money</button>
-  </form>
+    <script>
+        setTimeout(function() 
+        {
+            window.location.href = "../php/Logged_verified.php";
+        }, 2500); // 2500ms = 2,5s
+    </script>
 
 </body>
 </html>
+
