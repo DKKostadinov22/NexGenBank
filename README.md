@@ -1,7 +1,7 @@
 
 <h1 align = "center">NexGenBank</h1>
 <p align="center">
-    <img src="https://github.com/DKKostadinov22/NexGenBank/assets/132439820/87178b4e-e927-4271-bf82-9c52d482598a" alt="Logo" width="420" height="420">
+    <img src="https://github.com/DKKostadinov22/NexGenBank/assets/132439820/1233eb27-aee4-43b7-a66f-5aa5d995b807" alt="Logo" width="420" height="420">
 </p>
 <h3> Used applications for creating the design:</h3>
 <p align="left">
@@ -13,7 +13,7 @@
     <a href="https://github.com/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png" alt="GitHub logo" width = "50px"/></a>
     <a href="https://www.microsoft.com/en/microsoft-teams/group-chat-software"><img src="https://img.icons8.com/color/344/microsoft-teams.png" alt = "MS Teams logo" width="50px" /></a>
 </p>
-<h3> Used marking languages:</h3>
+<h3> Used programming languages:</h3>
 <p align="left">
     <a href="https://en.wikipedia.org/wiki/HTML"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="HTML logo" width="50px" height = "50px"/></a>
     <a href="https://en.wikipedia.org/wiki/CSS"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png" alt="CSS logo" width="38px" height = "50px"/></a>
@@ -70,10 +70,16 @@
 
 
 <h3>Features</h3>
-<ul>
-        <li>Seamless online banking experience</li>
-        <li>Advanced security measures</li>
-        <li>Real-time transaction tracking</li>
-        <li>Personalized financial insights</li>
-        <li>And much more!</li>
-    </ul>
+<li>
+    <strong>Paperless Statements:</trong>
+      <ul>-All account statements and communications are digital, reducing paper usage and environmental impact.</ul>
+</li>
+    <li>
+        <strong>Eco-Friendly Digital Cards:</strong>
+           <ul>-Provide customers with virtual debit/credit cards, minimizing the production and disposal of physical plastic cards.</ul>
+    </li>
+<li>
+  <strong>Renewable Energy Initiatives:</strong>
+        <ul>-Power data centers and operations using renewable energy sources, showcasing a commitment to clean and sustainable energy.</ul>
+</li>
+ 
