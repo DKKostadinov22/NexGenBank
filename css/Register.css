@@ -22,14 +22,19 @@
 {
     margin-right: 52px;
 }
+.nav-link:hover
+{
+    text-decoration: underline;
+}
 
 body
 {
-    background: rgb(0,224,36);
-    background: -moz-linear-gradient(90deg, rgba(0,224,36,1) 0%, rgba(0,51,8,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(0,224,36,1) 0%, rgba(0,51,8,1) 100%);
-    background: linear-gradient(90deg, rgba(0,224,36,1) 0%, rgba(0,51,8,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00e024",endColorstr="#003308",GradientType=1); 
+    background: rgb(0,51,8);
+    background: -moz-linear-gradient(90deg, rgba(0,51,8,1) 0%, rgba(0,224,36,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,51,8,1) 0%, rgba(0,224,36,1) 100%);
+    background: linear-gradient(90deg, rgba(0,51,8,1) 0%, rgba(0,224,36,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003308",endColorstr="#00e024",GradientType=1);
+    font-family: "Inter";
 }
 
 #card-body
@@ -38,7 +43,7 @@ body
     margin-right: 29vw;
     margin-top: 10vh;
     width: 42vw;
-    height: 120vh;
+    height: 100%;
     border-radius: 20px;
 }
 

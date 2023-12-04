@@ -21,3 +21,7 @@
 {
     margin-right: 52px;
 }
+.nav-link:hover
+{
+    text-decoration: underline;
+}
