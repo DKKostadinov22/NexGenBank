@@ -9,7 +9,7 @@
     <title>NGB</title>
 </head>
 <body>
-    <script src="../JS/Logged.js" defer></script>
+    <script src="../JS/Logged_verified.js" defer></script>
 
 
 <!--Navbar-->
@@ -55,23 +55,20 @@
                 <hr>
                 <h1 class="card-h1">Logged in as:</h1>
                 <br>
+            
                 <!--Account name-->
-                <div class="container" id="account-name-container">
-                    <p>
-                        <?php
+                <?php
 
-                        session_start();
+                  session_start();
 
-                        $email = $_SESSION['user_email'];
+                  $email = $_SESSION['user_email'];
 
-                        echo $email;
-                        echo
-                        '
-                        <br>';
-                        ?>
-                    </p>
-                </div>
-                <br>
+                  echo $email;
+                  echo
+                  '
+                  <br>';
+                  ?>
+                <br><br>
 
                 <!--Log out button-->
                 <button class="log-outbtn"><a href="../index.html">Log out</a></button>
