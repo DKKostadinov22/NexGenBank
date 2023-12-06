@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title>NGB</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="./images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
+      <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
       NexGenBank
     </a>
     <br>   
@@ -34,10 +34,10 @@
           <a class="nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./html/About Us.html">About Us</a>
+          <a class="nav-link" href="../html/About Us.html">About Us</a>
         </li>
         <li class="nav-item" id="nav-item-icon">
-          <img src="./images/pngegg.png">
+          <img src="../images/pngegg.png">
         </li>
       </ul>
     </div>
@@ -47,12 +47,13 @@
   <!--Login Card-->
   <div class="card text-center" id="card-body">
     <div class="card-body">
-      <form action="./php/login.php" method="post">
+      <form action="../php/login.php" method="post">
         <div class="container">
           <h1 style="font-weight: bold; color: #003308;">Login</h1>
+          <h3 style="font-weight: bold; color: #003308;">Login Failed: Invalid Email or Password</h3>
           <hr>
 
-          <form action="./php/login.php" method="post">
+          <form action="../php/login.php" method="post">
 
           <input type="text" placeholder="Email" name="email" id="email" required>
           <br><br>
@@ -60,7 +61,7 @@
           <input type="password" placeholder="Password" name="pass" id="pass" required>
           <br>
 
-          <a href="./html/forgot-password.html" class="card-link" id="fp" style="font-weight: bold;">Forgot password</a>
+          <a href="../html/forgot-password.html" class="card-link" id="fp" style="font-weight: bold;">Forgot password</a>
           <br>
 
           <button type="submit" class="registerbtn" >Log in</button>
@@ -68,7 +69,7 @@
 
           <br><br>
           <p id="or"><span>or</span></p>
-          <a href="./html/Register.html" class="card-link">Create an Account</a>
+          <a href="../html/Register.html" class="card-link">Create an Account</a>
         
         </div>
       </form> 
@@ -94,7 +95,7 @@
   <div class="col-sm-5 mb-3 mb-sm-0">
     <div class="card" id="TW-Picture">
       <div class="card-body" id="card-body-picture">
-        <img src="./images/Timothy Wirth-modified 1.png">
+        <img src="../images/Timothy Wirth-modified 1.png">
         <br><br>
         <h1>Timothy Wirth</h1>
       </div>
@@ -120,32 +121,32 @@
 <div class="row row-cols-1 row-cols-md-3 g-5" id="review-cards">
   <div class="col">
     <div class="card h-100" id="review-card">
-      <img src="./images/zvezdi-removebg-preview 1.png" class="card-img-top" alt="...">
+      <img src="../images/zvezdi-removebg-preview 1.png" class="card-img-top" alt="...">
       <div class="card-body" class="position-absolute top-0 start-0 translate-middle">
         <h5 class="card-title" class="card text-center">Dimitar Dimitrov</h5><br>
         <p class="card-text" id="review-text">Eco-banking's tech innovations make life easier and reduce environmental impact. I love it!</p>
       </div>
-      <img class="card-footer-image" src="./images/logo_green.png"><br>
+      <img class="card-footer-image" src="../images/logo_green.png"><br>
     </div>
   </div>
   <div class="col">
     <div class="card h-100" id="review-card">
-      <img src="./images/zvezdi-removebg-preview 1.png" class="card-img-top" alt="...">
+      <img src="../images/zvezdi-removebg-preview 1.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title"> Pablo Ivanov</h5><br>
         <p class="card-text" id="review-text">Switching to an eco-bank was a small step I could take to live more in line with my values. I want my financial choices to reflect my commitment to environmental and social responsibility.</p>
       </div>
-      <img class="card-footer-image" src="./images/logo_green.png"><br>
+      <img class="card-footer-image" src="../images/logo_green.png"><br>
     </div>
   </div>
   <div class="col">
     <div class="card h-100" id="review-card">
-      <img src="./images/zvezdi-removebg-preview 1.png" class="card-img-top" alt="...">
+      <img src="../images/zvezdi-removebg-preview 1.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Plamen Stoilov</h5><br>
         <p class="card-text" id="review-text">Switching to an eco-bank aligns with my values of environmental and social responsibility.</p>
       </div>
-        <img class="card-footer-image" src="./images/logo_green.png"><br>
+        <img class="card-footer-image" src="../images/logo_green.png"><br>
     </div>
   </div>
 </div>
@@ -157,12 +158,12 @@
 <footer>
   <div class="footer">
     <div class="logo_and_text">
-      <img class="logo_white" src="./images/logo_white.png" alt="Logo_white">
+      <img class="logo_white" src="../images/logo_white.png" alt="Logo_white">
       <div class="text_block">
         <h4 class="footer_logo_text">NexGenBank</h4>
       </div>
-      <img src="./images/Line_30liniq.png" alt="white_line">
-      <a target="_blank" href="https://www.codingburgas.bg/"><img class="vscpi_logo" src="./images/vscpi_logo.png" alt="Vscpi_logo"></a>
+      <img src="../images/Line_30liniq.png" alt="white_line">
+      <a target="_blank" href="https://www.codingburgas.bg/"><img class="vscpi_logo" src="../images/vscpi_logo.png" alt="Vscpi_logo"></a>
       <h4 class="part_of">part of</h4>
       <h4 class="footer_logo_text2">VSCPI</h4>
     </div>
@@ -176,8 +177,8 @@
 
     <div class="contact">
       <h4 class="contact_text">Contact us</h4>
-      <a target="_blank" href="https://www.instagram.com/_nexgenbank_/"><img class="ig_logo" src="./images/ig_logo.png" alt="IG Logo"></a>
-      <a target="_blank" href="https://github.com/DKKostadinov22/NexGenBank"><img class="gh_logo" src="./images/gh_logo.png" alt="GH Logo"></a>
+      <a target="_blank" href="https://www.instagram.com/_nexgenbank_/"><img class="ig_logo" src="../images/ig_logo.png" alt="IG Logo"></a>
+      <a target="_blank" href="https://github.com/DKKostadinov22/NexGenBank"><img class="gh_logo" src="../images/gh_logo.png" alt="GH Logo"></a>
     </div>
 
   </div>

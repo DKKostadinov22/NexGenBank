@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add</title>
+</head>
+<body>
+
+    <script src="../JS/Add.js" defer></script>
+
+<form action="./process_add.php" method="post" id="paymentForm">
+    <label for="cardNumber">Enter Card Number:</label>
+    <input type="text" id="cardNumber" name="cardNumber" required>
+    <br>
+    <label for="expirationDate">Enter Expiration Date (MM/YY):</label>
+    <input type="text" id="expirationDate" name="expirationDate" required>
+    <br>
+    <label for="fullName">Enter First and Last Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+    <br>
+    <label for="cvv">Enter CVV:</label>
+    <input type="text" id="cvv" name="cvv" required>
+    <br>
+    <label for="amount">Enter Amount:</label>
+    <input type="number" id="amount" name="amount" min="1" max="1000" required>
+    <br>
+    <input type="submit" value="Add" id="submitButton" disabled>
+</form>
+
+</body>
+</html>
