@@ -80,19 +80,19 @@
                 <img class="upload-cloud-img" src="../images/upload_cloud.png"><br><br>
 
                 <!--Upload Form-->
-                <form action="./verification.php">
+                <form action="./verification.php" enctype="multipart/form-data">
+
                 <label for="file-upload" class="custom-file-upload">
-                    <i class="browse-files-btn" type="file" onchange="enableUpload()" accept="image/*"></i>Browse files...
-                </label>
-                <input id="file-upload" type="file"/><br><br>
-                
-                
+                    <input id="file-upload" type="file" name="uploadedFile" onchange="enableUpload()" accept="image/*"> Browse files...
+                </label><br><br>
+
                 <!--Upload Button-->
                 <div class="upload-button-container">
                     <h1>
                         <input type="submit" value="Upload File" id="uploadButton" disabled>
                     </h1>
                 </div>
+                
                 </form>
             </div>
         </div>
