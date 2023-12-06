@@ -87,7 +87,11 @@ margin-top: 38vh;
     border: 1px solid #A9A9A9;
     border-radius: 20px;
 
+}
+.log-outbtn a
+{
     color: #FF0000;
+    text-decoration: none;
 }
 input[type="file"] 
 {

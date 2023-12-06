@@ -199,38 +199,50 @@ box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
 /* Quote1 */
 .quote{
     position: absolute;
-    top: 25%;
-    left: 20%;
-    right: 20%;
-    z-index: 2;
-
+    width: 100%;
+    height: 20vh;
+    margin-top: 87vh;
+    
     background: #ECECEC;
 }
-.quote-text
+.quote-text h1
 {
     position: absolute;
     top: 38%;
-    left: 38%;
-    transform: translate(-30%, -30%);
     z-index: 2;
-    
-
+        
     font-weight: bolder;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
-color: #003308;
+
+    color: #003308;
 }
-
-
+.quote-text  h1::before,
+.quote-text  h1::after {
+    background-color: #003308;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+}
+.quote-text  h1::before {
+    right: 1em;
+    margin-left: 8%;
+}
+.quote-text h1::after {
+    left: 1em;
+    margin-right: -30%;
+}
 /* TW-quote */
 #TW-quote
 {
