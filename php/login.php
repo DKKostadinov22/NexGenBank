@@ -28,6 +28,7 @@ session_start();
         //Store the IBAN in a session variable
         $_SESSION['user_iban'] = $user['iban'];
         $_SESSION['user_email'] = $user['email'];
+        $_SESSION['user_username'] = $user['username'];
         $_SESSION['user_bal'] = $user['bal'];
         $_SESSION['user_verified'] = $user['user_verified'];
   

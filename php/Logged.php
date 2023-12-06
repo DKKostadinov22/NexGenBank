@@ -62,9 +62,9 @@
 
                         session_start();
 
-                        $email = $_SESSION['user_email'];
+                        $username = $_SESSION['user_username'];
 
-                        echo $email;
+                        echo $username;
                         echo
                         '
                         <br>';
