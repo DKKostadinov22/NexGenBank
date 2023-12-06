@@ -74,7 +74,7 @@
                 <br>
 
                 <!--Log out button-->
-                <button class="log-outbtn"><a href="../index.html">Log out</a></button>
+                <button href="../index.html" class="log-outbtn"><a href="../index.html">Log out</a></button>
                 <br><hr>
 
                 <!--Card text for upload-->
