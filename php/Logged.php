@@ -105,10 +105,7 @@
 <div class="quote">
     <div class="quote-text">
     <h1>"Banking on a sustainable future. Together, let's invest in a greener tomorrow."</h1>
-    </div>
-
-<!--Gap-->
-<div class="gap"></div>
+</div>
 
 <!--Footer-->
 <footer>
