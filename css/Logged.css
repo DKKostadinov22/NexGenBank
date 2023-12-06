@@ -1,0 +1,275 @@
+/* Navbar */
+.navbar-brand
+{
+    color: #0C5600;
+    font-size: 36px;
+}
+#navbarNav
+{
+    font-size: 32px;
+    color: #0C5600;
+    display: flex; 
+    align-items: end;
+    justify-content: flex-end;
+
+}      
+.nav-item
+{
+    color: #0C5600;
+    margin-left: 152px;
+}
+#nav-item-icon
+{
+    margin-right: 52px;
+}
+.nav-link:hover
+{
+    text-decoration: underline;
+}
+
+/* Body */
+body
+{
+    background: rgb(0,51,8);
+    background: -moz-linear-gradient(90deg, rgba(0,51,8,1) 0%, rgba(0,224,36,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,51,8,1) 0%, rgba(0,224,36,1) 100%);
+    background: linear-gradient(90deg, rgba(0,51,8,1) 0%, rgba(0,224,36,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003308",endColorstr="#00e024",GradientType=1);
+    font-family: "Inter";
+}
+
+/* Gap */
+.gap
+{
+
+width: 100%;
+height: 20vh;
+
+background: #D9D9D9;
+margin-top: 38vh;
+}
+
+/* Login Card */
+#card-body
+{
+    position: absolute;
+    margin-left: 4vw;
+    margin-right: 70vw;
+    margin-top: 10vh;
+    width: 30vw;
+    height: 69vh;
+    border-radius: 20px;
+}
+.card-h1
+{
+    font-weight: bold; 
+    color: #003308;
+}
+.card-h1-2
+{
+    font-weight: bold; 
+    color: #003308; 
+    font-size: 28px;
+}
+.upload-cloud-img
+{
+    width: 121px;
+    height: 93px;
+}
+.log-outbtn
+{
+    box-sizing: border-box;
+
+    width: 107px;
+    height: 35px;
+
+    background: #FFC5C5;
+    border: 1px solid #A9A9A9;
+    border-radius: 20px;
+
+    color: #FF0000;
+}
+input[type="file"] 
+{
+    display: none;
+    z-index: 99;
+}
+.custom-file-upload
+{
+    box-sizing: border-box;
+
+    width: 151px;
+    height: 40px;
+
+    background: #ECECEC;
+    border: 1px solid #A9A9A9;
+    border-radius: 20px;
+
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+
+}
+#uploadButton
+{
+    width: 237px;
+    height: 46px;
+
+    background: #0C5600;
+    border-radius: 20px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+
+    color: #ECECEC;
+}
+.upload-button-container  h1::before,
+.upload-button-container  h1::after {
+    background-color: #A9A9A9;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+}
+.upload-button-container  h1::before {
+    right: 0.3em;
+    margin-left: -50%;
+}
+.upload-button-container h1::after {
+    left: 0.3em;
+    margin-right: -50%;
+}
+
+ /* Ellipses */
+.ellipse_group
+{
+    position: absolute;
+    width: 25.4vw;
+    height: 64vh;
+    z-index: -1;
+    
+
+}
+    .elliplse_1
+    {
+    position: absolute;
+    width: 15vw;
+    height: 27vh;
+    border-radius: 50%;
+    font-size: 36px;
+
+    margin-right: 23vw;
+    margin-left: 60vw;
+    margin-top: 15vh;
+
+    background: #FFFFFF;
+    color: #003308;
+    border: 1px solid #003308;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+
+    }
+    .elliplse_2
+    {
+    position: absolute;
+    width: 13vw;
+    height: 23vh;
+    border-radius: 50%;
+
+    margin-right: 15vw;
+    margin-left: 72vw;
+    margin-top: 30vh;
+
+    background: #003308;
+    color: #ECECEC;
+    z-index: 2;
+    border: 1px solid #003308;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+
+}
+.elliplse_3
+{
+position: absolute;
+width: 18vw;
+height: 32vh;
+border-radius: 50%;
+
+margin-left: 65vw;
+margin-right: 16vw;
+margin-top: 46vh;
+
+background: #ECECEC;
+color: #003308;
+border: 1px solid #003308;
+box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+
+}
+
+
+.ellipse-text
+{
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9vh;
+
+    font-size: 28px;
+} 
+#Ellipse3-text
+{
+    font-size: 32px;
+}
+
+/* Quote1 */
+.quote{
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    margin-top: 87vh;
+    
+    background: #ECECEC;
+}
+.quote-text h1
+{
+    position: absolute;
+    top: 38%;
+    z-index: 2;
+        
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #003308;
+}
+.quote-text  h1::before,
+.quote-text  h1::after {
+    background-color: #003308;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+}
+.quote-text  h1::before {
+    right: 1em;
+    margin-left: 8%;
+}
+.quote-text h1::after {
+    left: 1em;
+    margin-right: -30%;
+}
