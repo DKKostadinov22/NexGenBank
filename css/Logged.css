@@ -140,40 +140,9 @@ input[type="file"]
     cursor: pointer;
 
 }
-#uploadButton
+.spinner-border
 {
-    width: 237px;
-    height: 46px;
-
-    background: #0C5600;
-    border-radius: 20px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 21px;
-    line-height: 25px;
-
-    color: #ECECEC;
-
-}
-.upload-button-container  h1::before,
-.upload-button-container  h1::after {
-    background-color: #A9A9A9;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 20%;
-}
-.upload-button-container  h1::before {
-    right: 0.3em;
-    margin-left: -50%;
-}
-.upload-button-container h1::after {
-    left: 0.3em;
-    margin-right: -50%;
+    color: #003308;
 }
 
  /* Ellipses */
