@@ -76,7 +76,7 @@ if ($senderBalance >= $amount)
     $updatedSenderStmt->close();//Close the statement
 
     // Redirect to a success page after transfer
-    header("Location: ../html/transfer_success.html");
+    header("Location: ../pages/transfer_success.html");
 } 
 else 
 {

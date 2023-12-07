@@ -47,43 +47,43 @@
     //Checks if the email format is valid
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) 
     {
-      readfile("../html/register_checks/email_validate.html");
+      readfile("../pages/register_checks/email_validate.html");
     }
 
     //Checks if the phone number is a valid BG pattern
     else if (!preg_match($pattern, $phone_number)) 
     {
-      readfile("../html/register_checks/phone_validate.html");
+      readfile("../pages/register_checks/phone_validate.html");
     }
 
     //Checks if the password matches the password repeat
     else if($pass != $pass_repeat)
     {
-      readfile("../html/register_checks/pass_repeat_check.html");
+      readfile("../pages/register_checks/pass_repeat_check.html");
     }
 
     //Checks if the password meets the requirements
     else if(!$uppercase || !$lowercase || !$number || !$specialChars || strlen($pass) < 8) 
     {
-      readfile("../html/register_checks/pass_check.html");
+      readfile("../pages/register_checks/pass_check.html");
     }
 
     //Checks if an account with this username already exists
     else if(mysqli_num_rows($check) > 0)
     {
-      readfile("../html/register_checks/username_exist.html");
+      readfile("../pages/register_checks/username_exist.html");
     }
 
     //Checks if an account with this email already exists
     else if(mysqli_num_rows($check2) > 0)
     {
-      readfile("../html/register_checks/email_exist.html");
+      readfile("../pages/register_checks/email_exist.html");
     }
 
     //Checks if an account with this phone number already exists
     else if(mysqli_num_rows($check3) > 0)
     {
-      readfile("../html/register_checks/phone_exist.html");
+      readfile("../pages/register_checks/phone_exist.html");
     }
 
     //Passes all the checks and creates an account
@@ -92,7 +92,7 @@
         $stmt = $conn->prepare("INSERT INTO users (first_name, last_name, gender, phone_number, username, email, pass, iban, bal) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssssssi", $first_name, $last_name, $gender, $phone_number, $username, $email, $pass, $iban, $bal);
         $stmt->execute();
-        readfile("../html/register_checks/register_success.html");
+        readfile("../pages/register_checks/register_success.html");
         $stmt->close();
         $conn->close();
     }

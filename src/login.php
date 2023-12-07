@@ -44,7 +44,7 @@ session_start();
     }
      else 
     {
-        readfile("../html/login/login_fail.html");
+        readfile("../pages/login/login_fail.html");
     }
 
     $stmt->close();
