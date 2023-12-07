@@ -34,12 +34,12 @@ session_start();
   
         if ($verified == 0)
         {
-        header("Location: ../php/Logged.php");
+        header("Location: ../src/Logged.php");
         }
         else if ($verified == 1)
         {
         //Redirect to a page where you are logged in and verified
-        header("Location: ../php/Logged_verified.php");
+        header("Location: ../src/Logged_verified.php");
         }
     }
      else 
