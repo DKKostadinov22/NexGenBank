@@ -74,25 +74,63 @@ $stmt->close();
 
 <!--Transfer Card-->
 <div class="card text-center" id="card-body">
-  <div class="card-body">
-      <div class="container">
+    <div class="card-body">
+        <div class="container">
         <br>
+        <!--Header-->
         <h1>Transfer</h1>
         <hr><br><br><br>
 
         <form action="../src/process_transfer.php" method="post">
-          <input placeholder="IBAN number" type="text" id="iban" name="iban" required>
-          <br><br>
-          
-          <input placeholder="💳 Add amount" type="number" id="amount" name="amount" min="1" max="<?php echo $userBalance; ?>" required>
-          <br><br><br><br><hr>
-          
-          <input class="submitbtn" type="submit" value="Submit">
+        <!--IBAN-->  
+        <input placeholder="IBAN number" type="text" id="iban" name="iban" required>
+        <br><br>
+
+        <!--Add Amount input-->
+        <input placeholder="💳 Add amount" type="number" id="amount" name="amount" min="1" max="<?php echo $userBalance; ?>" required>
+        <br><br><br><br><hr>
+
+        <!--Submit button-->
+        <input class="submitbtn" type="submit" value="Submit">
         </form>
 
-      </div>
+        </div>
     </div>
-  </div>
 </div>
+</div>
+
+<!--Gap-->
+<div class="gap"></div>
+
+<!--Footer-->
+<footer>
+  <div class="footer">
+    <div class="logo_and_text">
+      <img class="logo_white" src="../images/logo_white.png" alt="Logo_white">
+      <div class="text_block">
+        <h4 class="footer_logo_text">NexGenBank</h4>
+      </div>
+      <img src="../images/Line_30liniq.png" alt="white_line">
+      <a target="_blank" href="https://www.codingburgas.bg/"><img class="vscpi_logo" src="../images/vscpi_logo.png" alt="Vscpi_logo"></a>
+      <h4 class="part_of">part of</h4>
+      <h4 class="footer_logo_text2">VSCPI</h4>
+    </div>
+
+    <h4 class="abt_us">Contributors</h4>
+    <br>
+    <h6 class="abt_us2">Scrum: DKKostadinov22</h6>
+    <h6 class="abt_us2">Back-end: BRMilev22</h6>
+    <h6 class="abt_us2">Front-end: DPDimitrakov22</h6>
+    <h6 class="abt_us2">Designer: PRPetkov22</h6>
+
+    <div class="contact">
+      <h4 class="contact_text">Contact us</h4>
+      <a target="_blank" href="https://www.instagram.com/_nexgenbank_/"><img class="ig_logo" src="../images/ig_logo.png" alt="IG Logo"></a>
+      <a target="_blank" href="https://github.com/DKKostadinov22/NexGenBank"><img class="gh_logo" src="../images/gh_logo.png" alt="GH Logo"></a>
+    </div>
+
+  </div>
+</footer>
+
 </body>
 </html>

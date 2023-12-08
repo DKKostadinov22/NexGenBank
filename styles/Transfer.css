@@ -49,10 +49,10 @@ width: 100%;
 height: 20vh;
 
 background: #D9D9D9;
-margin-top: 38vh;
+margin-top: 100vh;
 }
 
-/* Login Card */
+/* Transfer Card */
 #card-body
 {
     position: absolute;
@@ -74,7 +74,6 @@ margin-top: 38vh;
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
-    /* identical to box height */
 
     color: #003308;
 }
@@ -137,4 +136,139 @@ margin-top: 38vh;
     line-height: 31px;
 
     color: #FFFFFF;
+}
+
+/* Footer */
+.footer {
+    height: 20vh;
+    color: #858585;
+
+    margin-top: 12vh;
+  }
+    
+
+  .logo_and_text {
+    display: flex;
+    align-items: center;
+    margin-left: 3.5vw;
+    margin-top: 10vh;
+  }
+  
+  .footer_logo_text {
+    margin-left: 1vw;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+
+color: #FFFFFF;
+  }
+  
+  .text_block {
+    text-align: left;
+    margin-right: 1vw;
+  }
+  .text-block p
+  {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #A9A9A9;
+  }
+
+  .vscpi_logo
+  {
+    width: 95px;
+    height: 95px;
+  }
+    
+  .part_of
+{
+    margin-left: 1vw;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 44px;
+    
+    color: #FFFFFF;
+}
+
+.footer_logo_text2
+{
+    margin-left: 0.3vw;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+}
+
+.abt_us
+{
+    text-align: center;
+    margin-top: -17vh;
+    margin-left: 12vw;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+
+}
+
+.abt_us2
+{
+    text-align: center;
+    margin-left: 12vw;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.ig_logo
+{
+    width: 120px;
+    height: 95px;
+}
+
+.contact
+{
+    margin-left: 74vw;
+    margin-top: -20vh;
+}
+
+.gh_logo
+{
+    width: 160px;
+    height: 120px;
+}
+
+.contact_text
+{
+    margin-left: 2vw;
+    margin-top: -12vh;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+
 }
