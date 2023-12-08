@@ -9,7 +9,7 @@
     <title>NGB</title>
 </head>
 <body>
-    <script src="../JS/Logged.js" defer></script>
+    <script src="../JS/Logged_verified.js" defer></script>
 
 
 <!--Navbar-->
@@ -103,7 +103,7 @@
                 <br>
 
                 <!--Log out button-->
-                <button class="log-outbtn"><a href="../index.html">Log out</a></button>
+                <button class="log-outbtn" onclick="goToIndex()"><a href="../index.html">Log out</a></button>
                 <br><hr>
 
                 <!--Transfer button-->
