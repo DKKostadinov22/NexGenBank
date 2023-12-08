@@ -117,8 +117,8 @@
                 </div>
                 
                 <!--Add button-->
-                <form action="../src/add.php" method="post">
-                  <button class="money-buttons" type="submit">Add Money</button>
+                <form action="../src/Deposit.php" method="post">
+                  <button class="money-buttons" type="submit">Deposit</button>
                 </form>
             </div>
         </div>
