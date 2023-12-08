@@ -61,11 +61,11 @@
 
                         session_start();
 
-                        $email = $_SESSION['user_email'];
+                        $username = $_SESSION['user_username'];
                         $iban = $_SESSION['user_iban'];
                         $bal = $_SESSION['user_bal'];
 
-                        echo $email;
+                        echo $username;
                         echo
                         '
                         <br>';
