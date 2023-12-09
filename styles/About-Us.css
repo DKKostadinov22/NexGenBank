@@ -83,6 +83,37 @@ margin-top: 38vh;
     max-width: 20vw;
     width: 100%;
 }
+#text-line p {
+    font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+text-align: center;
+
+color: #FFFFFF;
+  } 
+  #text-line  p::before,
+  #text-line  p::after {
+    background-color: #FFFFFF;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 40%;
+  }
+  
+  #text-line  p::before {
+    right: 0.3em;
+    margin-left: -50%;
+  }
+  
+  #text-line p::after {
+    left: 0.3em;
+    margin-right: -50%;
+  }
+
 #iban, #amount
 {
     box-sizing: border-box;
