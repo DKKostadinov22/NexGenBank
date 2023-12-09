@@ -31,59 +31,64 @@ $senderStmt->close(); //Close the sender statement
 //Check if the sender has sufficient balance
 if ($senderBalance >= $amount) 
 {
-    $receiverQuery = "SELECT bal FROM users WHERE iban = ?";
-    $receiverStmt = $conn->prepare($receiverQuery);
-    $receiverStmt->bind_param('s', $iban);
-    $receiverStmt->execute();
-    $receiverResult = $receiverStmt->get_result();
 
-    if ($receiverResult->num_rows == 1) 
+    // Check if the receiver's IBAN exists in the database
+    $checkReceiverQuery = "SELECT bal FROM users WHERE iban = ?";
+    $checkReceiverStmt = $conn->prepare($checkReceiverQuery);
+    $checkReceiverStmt->bind_param('s', $iban);
+    $checkReceiverStmt->execute();
+    $checkReceiverResult = $checkReceiverStmt->get_result();
+
+    if ($checkReceiverResult->num_rows == 1) 
     {
-        $receiver = $receiverResult->fetch_assoc();
+        //If receiver's IBAN exists, proceed with the transfer
+
+        $receiver = $checkReceiverResult->fetch_assoc();
+
+        //Update sender's balance after the transfer
+        $updateSenderQuery = "UPDATE users SET bal = bal - ? WHERE email = ?";
+        $updateSenderStmt = $conn->prepare($updateSenderQuery);
+        $updateSenderStmt->bind_param('is', $amount, $loggedInUserEmail);
+        $updateSenderStmt->execute();
+
+        //Update receiver's balance after the transfer
+        $updateReceiverQuery = "UPDATE users SET bal = bal + ? WHERE iban = ?";
+        $updateReceiverStmt = $conn->prepare($updateReceiverQuery);
+        $updateReceiverStmt->bind_param('is', $amount, $iban);
+        $updateReceiverStmt->execute();
+
+        //Retrieve updated sender's balance
+        $updatedSenderQuery = "SELECT bal FROM users WHERE email = ?";
+        $updatedSenderStmt = $conn->prepare($updatedSenderQuery);
+        $updatedSenderStmt->bind_param('s', $loggedInUserEmail);
+        $updatedSenderStmt->execute();
+        $updatedSenderResult = $updatedSenderStmt->get_result();
+
+        if ($updatedSenderResult->num_rows == 1) 
+        {
+            $updatedSender = $updatedSenderResult->fetch_assoc();
+            $_SESSION['user_bal'] = $updatedSender['bal']; //Update session variable with the updated balance
+        }
+
+        $updatedSenderStmt->close(); //Close the statement
+
+        //Redirect to a success page after transfer
+        header("Location: ../pages/transfer_success.html");
+    }
+    else 
+    {
+        //If receiver's IBAN doesn't exist in the DB, redirect to error page
+        header("Location: ../pages/transfer_fail.html");
     }
 
-    $receiverStmt->close(); //Close the receiver statement
-
-    //Update sender's balance after the transfer
-    $updateSenderQuery = "UPDATE users SET bal = bal - ? WHERE email = ?";
-    $updateSenderStmt = $conn->prepare($updateSenderQuery);
-    $updateSenderStmt->bind_param('is', $amount, $loggedInUserEmail);
-    $updateSenderStmt->execute();
-
-    //Update receiver's balance after the transfer
-    $updateReceiverQuery = "UPDATE users SET bal = bal + ? WHERE iban = ?";
-    $updateReceiverStmt = $conn->prepare($updateReceiverQuery);
-    $updateReceiverStmt->bind_param('is', $amount, $iban);
-    $updateReceiverStmt->execute();
-
-    ////////////////////////////////////////////////////////////
-
-    //Retrieve updated sender's balance, so it can update the variable in Logged_verified.php 
-    $updatedSenderQuery = "SELECT bal FROM users WHERE email = ?";
-    $updatedSenderStmt = $conn->prepare($updatedSenderQuery);
-    $updatedSenderStmt->bind_param('s', $loggedInUserEmail);
-    $updatedSenderStmt->execute();
-    $updatedSenderResult = $updatedSenderStmt->get_result();
-
-    if ($updatedSenderResult->num_rows == 1) 
-    {
-        $updatedSender = $updatedSenderResult->fetch_assoc();
-        $_SESSION['user_bal'] = $updatedSender['bal']; //Update session variable with the updated balance
-    }
-
-    ////////////////////////////////////////////////////////////
-
-    $updatedSenderStmt->close();//Close the statement
-
-    // Redirect to a success page after transfer
-    header("Location: ../pages/transfer_success.html");
-} 
+    $checkReceiverStmt->close(); //Close the check receiver statement
+}
 else 
 {
 
 }
 
-$updateSenderStmt->close();
-$updateReceiverStmt->close();
+$updateSenderStmt->close(); //Close the update sender statement
+$updateReceiverStmt->close(); //Close the update receiver statement
 $conn->close();
 ?>
