@@ -85,7 +85,7 @@ if ($senderBalance >= $amount)
 }
 else 
 {
-
+    header("Location: ../pages/transfer_no_bal.html");
 }
 
 $updateSenderStmt->close(); //Close the update sender statement

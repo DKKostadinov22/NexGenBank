@@ -46,6 +46,7 @@
         <br>
         <!--Header-->
         <h1>Transfer</h1>
+        <h3>Transfer failed: insufficient balance!</h3>
         <hr><br><br><br>
 
         <form action="../src/process_transfer.php" method="post">
@@ -54,7 +55,7 @@
         <br><br>
 
         <!--Add Amount input-->
-        <input placeholder="💳 Add amount" type="number" id="amount" name="amount" min="1" required>
+        <input placeholder="💳 Add amount" type="number" id="amount" name="amount" min="1" max="<?php echo $userBalance; ?>" required>
         <br><br><br><br><hr>
 
         <!--Transfer button-->
