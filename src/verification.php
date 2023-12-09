@@ -11,33 +11,32 @@
 <body>
     <script src="../JS/Redirecting.js" defer></script>
 
-
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
-        NexGenBank
-      </a>
-      <br>   
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/About Us.html">About Us</a>
-          </li>
-          <li class="nav-item" id="nav-item-icon">
-            <img src="../images/pngegg.png">
-          </li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../src/Logged_verified.php">
+      <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
+      NexGenBank
+    </a>
+    <br>   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="../src/Logged_verified.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/About Us.html">About Us</a>
+        </li>
+        <li class="nav-item" id="nav-item-icon">
+          <img src="../images/pngegg.png">
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
 <!--Eclipses-->
 <div class="ellipse_group">
@@ -62,9 +61,9 @@
 
                         session_start();
 
-                        $email = $_SESSION['user_email'];
+                        $username = $_SESSION['user_username'];
 
-                        echo $email;
+                        echo $username;
                         echo
                         '
                         <br>';
