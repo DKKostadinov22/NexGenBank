@@ -44,8 +44,13 @@
 
     //DB formatting, and filtering
 
+    //Checks if a username is more than 12 chars
+    if (strlen($username) > 12)
+    {
+      readfile("../pages/register_checks/username_len.html");
+    }
     //Checks if the email format is valid
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) 
+    else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) 
     {
       readfile("../pages/register_checks/email_validate.html");
     }
