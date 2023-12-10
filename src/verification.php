@@ -9,7 +9,7 @@
     <title>NGB</title>
 </head>
 <body>
-    <script src="../JS/Redirecting.js" defer></script>
+    <script src="../script/Redirecting.js" defer></script>
 
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">

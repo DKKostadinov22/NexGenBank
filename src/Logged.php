@@ -9,7 +9,7 @@
     <title>NGB</title>
 </head>
 <body>
-    <script src="../JS/Logged.js" defer></script>
+    <script src="../script/Logged.js" defer></script>
 
 
 <!--Navbar-->
