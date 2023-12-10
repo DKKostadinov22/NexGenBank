@@ -1,4 +1,3 @@
-# NexGenBank
 
 <h1 align = "center">NexGenBank</h1>
 <p align="center">
