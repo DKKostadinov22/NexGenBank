@@ -118,7 +118,7 @@ margin-top: 38vh;
 
 
 /* Ellipses */
- .ellipse_group
+.ellipse_group
 {
     position: absolute;
     width: 25.4vw;
@@ -127,8 +127,8 @@ margin-top: 38vh;
     
 
 }
-    .elliplse_1
-    {
+.elliplse_1
+{
     position: absolute;
     width: 14vw;
     height: 27vh;
@@ -144,9 +144,9 @@ margin-top: 38vh;
     border: 1px solid #003308;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
 
-    }
-    .elliplse_2
-    {
+}
+.elliplse_2
+{
     position: absolute;
     width: 12vw;
     height: 23vh;
