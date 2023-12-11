@@ -59,7 +59,41 @@ margin-top: 25vh;
     height: 100%;
     border-radius: 20px;
 }
+.register-card-header
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
 
+    color: #003308;
+
+}
+.register-card-subheader
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #003308;
+}
+.register-card-text
+{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+
+padding-left: 7vw;
+padding-right: 7vw;
+
+color: #003308;
+}
 input
 {
     width: 24vw;
