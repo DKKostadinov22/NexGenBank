@@ -25,7 +25,7 @@ if ($result->num_rows == 1)
     $userBalance = $user['bal'];
 }
 
-readfile("../pages/Deposit.html");
+readfile("../../pages/deposit/Deposit.html");
 
 $stmt->close();
 ?>

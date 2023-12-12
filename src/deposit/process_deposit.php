@@ -52,7 +52,7 @@ if ($addResult->num_rows == 1)
     $updatedaddStmt->close();//Close the statement
 
     // Redirect to a success page after money add
-    header("Location: ../pages/Deposit-success.html");
+    header("Location: ../../pages/deposit/Deposit-success.html");
 
 $updateaddStmt->close();
 $updateReceiverStmt->close();

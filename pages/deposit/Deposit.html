@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/Deposit.css">
-    <link rel="icon" href="../images/logo_white.png">
+    <link rel="stylesheet" href="../../styles/Deposit.css">
+    <link rel="icon" href="../../images/logo_white.png">
     <title>NexGenBank</title>
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="../script/Redirecting.js"></script>
-
+    
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="../src/Logged_verified.php">
-      <img src="../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
+    <a class="navbar-brand" href="../../src/Logged_verified.php">
+      <img src="../../images/logo_green.png" alt="Logo" width="131" height="109" class="d-inline-block align-text-center">
       NexGenBank
     </a>
     <br>   
@@ -28,13 +27,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="../src/Logged_verified.php">Home</a>
+          <a class="nav-link active" href="../../src/Logged_verified.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/About-Us.html">About Us</a>
+          <a class="nav-link" href="../../pages/About-Us.html">About Us</a>
         </li>
         <li class="nav-item" id="nav-item-icon">
-          <img src="../images/pngegg.png">
+          <img src="../../images/pngegg.png">
         </li>
       </ul>
     </div>
@@ -53,10 +52,10 @@
         <!--Sub Title-->
         <h2>We accept</h2>
         <!--Cards Image-->
-        <img src="../images/Card Icons.png">
+        <img src="../../images/Card Icons.png">
         <br><br><br>
 
-        <form action="../src/process_deposit.php" method="post" id="paymentForm">
+        <form action="../../src/deposit/process_deposit.php" method="post" id="paymentForm">
           <!--Full name input-->
           <input placeholder="First and Last name" class="input-box" type="text" id="fullName" name="fullName" required>
           <br><br>
@@ -69,11 +68,9 @@
           <br><br>
           <!--Amount-->
           <input placeholder="💳 Add amount" class="input-box" type="number" id="amount" name="amount" min="1" max="1000" required>
-          <br><br><br><hr class="hr-button"><br>
-          <!--Upload Button-->
-          <div class="spinner-border text-success" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
+          <br><br><br><hr class="hr-button">
+          <!--Deposit button-->
+          <input type="submit" value="Deposit" class="submitbtn" disabled>
           <br><br>
       </form>
 
@@ -82,6 +79,8 @@
 </div>
 </div>
 
+<script src="../../script/Deposit.js"></script>
+
 <!--Gap-->
 <div class="gap"></div>
 
@@ -89,12 +88,12 @@
 <footer>
   <div class="footer">
     <div class="logo_and_text">
-      <img class="logo_white" src="../images/logo_white.png" alt="Logo_white">
+      <img class="logo_white" src="../../images/logo_white.png" alt="Logo_white">
       <div class="text_block">
         <h4 class="footer_logo_text">NexGenBank</h4>
       </div>
-      <img src="../images/Line_30liniq.png" alt="white_line">
-      <a target="_blank" href="https://www.codingburgas.bg/"><img class="vscpi_logo" src="../images/vscpi_logo.png" alt="Vscpi_logo"></a>
+      <img src="../../images/Line_30liniq.png" alt="white_line">
+      <a target="_blank" href="https://www.codingburgas.bg/"><img class="vscpi_logo" src="../../images/vscpi_logo.png" alt="Vscpi_logo"></a>
       <h4 class="part_of">part of</h4>
       <h4 class="footer_logo_text2">VSCPI</h4>
     </div>
@@ -108,8 +107,8 @@
 
     <div class="contact">
       <h4 class="contact_text">Contact us</h4>
-      <a target="_blank" href="https://www.instagram.com/_nexgenbank_/"><img class="ig_logo" src="../images/ig_logo.png" alt="IG Logo"></a>
-      <a target="_blank" href="https://github.com/DKKostadinov22/NexGenBank"><img class="gh_logo" src="../images/gh_logo.png" alt="GH Logo"></a>
+      <a target="_blank" href="https://www.instagram.com/_nexgenbank_/"><img class="ig_logo" src="../../images/ig_logo.png" alt="IG Logo"></a>
+      <a target="_blank" href="https://github.com/DKKostadinov22/NexGenBank"><img class="gh_logo" src="../../images/gh_logo.png" alt="GH Logo"></a>
     </div>
 
   </div>
