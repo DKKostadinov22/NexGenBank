@@ -125,7 +125,7 @@
                 </div>
                 
                 <!--Add button-->
-                <form action="../src/Deposit.php" method="post">
+                <form action="../src/deposit/Deposit.php" method="post">
                   <button class="money-buttons" type="submit">Deposit</button>
                 </form>
             </div>
