@@ -29,5 +29,5 @@
     <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="-----------------------------------------------------">
 </p>
 <h4 align="center"> Created by team NexGenBank | &copy 2023 All rights reserved.</h4>
-   <p align="center">______________________________________________________________________________________________________________________________________________</p>
+   <p align="center">_______________________________________________________________________________________________________________________</p>
 <h1 align="center">Thanks for checking out our repo, show us some ❤️ by giving our repo a ⭐️!</h1>
