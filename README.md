@@ -12,7 +12,7 @@
 <p align="center">
     <img src = "https://img.shields.io/badge/languages_used-4-blue" width="150">
     <img src = "https://img.shields.io/badge/contributors-4-blue"  width="123">
-    <img src = "https://img.shields.io/badge/repo size-5MB-blue"  width="120">
+    <img src = "https://img.shields.io/badge/repo size-20MB-blue"  width="130">
     <img src = "https://img.shields.io/badge/Last commit-December 12th-blue"  width="225">
     
   
