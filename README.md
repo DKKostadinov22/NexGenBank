@@ -154,7 +154,7 @@
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 | <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1183844914061135872/Screenshot_2128.png?ex=6589d07e&is=65775b7e&hm=58888e94ccad1fddd9875df2934fd6754506b75ae75017b133d3c358ad59fd12&" alt="Home Page"> | <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1183846696573210664/Screenshot_2136.png?ex=6589d227&is=65775d27&hm=dc7ba47ae732d4bd71f88ed1ab615d6d82848c0299806be67fc87b60191707a7&" alt="Ratings">                             |
 
-|     Delete everything in htdocs file in Xampp folder                  |                     Open the htdocs file                               |
+|     Delete everything in htdocs folder in Xampp's directory - C:/xampp|                     Open the htdocs folder                             |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 |  <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1183847799041839184/Screenshot_2138_LI.jpg?ex=6589d32e&is=65775e2e&hm=e5687ecdae6fd246af313685706a01ff80200d76ff68aada5581fa38a8e58a21&" alt="Home Page"> | <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1183849486645198888/Screenshot_2145.png?ex=6589d4c0&is=65775fc0&hm=1d142f933fe22ba3d06ae61ae33b41406bafea812cf8e107e28ed8389a4bf146&" alt="Ratings">                             |
 
