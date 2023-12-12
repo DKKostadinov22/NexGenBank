@@ -1,6 +1,6 @@
 <?php
     //Connection
-    $conn = new mysqli('78.128.11.228', 'ngb', 'dbpass1234', 'ngb_db');
+    $conn = new mysqli('sql11.freemysqlhosting.net', 'sql11669919', 'kgzx5LEnIr', 'sql11669919');
 
     if ($conn->connect_error)
     {   
