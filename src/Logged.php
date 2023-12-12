@@ -42,9 +42,16 @@
 
 <!--Eclipses-->
 <div class="ellipse_group">
-    <div class="elliplse_1"><p class="ellipse-text">“NO physical branches!”</p></div>
-    <div class="elliplse_2"><p class="ellipse-text">“NGB”</p></div>
-    <div class="elliplse_3"><p class="ellipse-text" id="Ellipse3-text">“Еasy and secure banking”</p></div>
+  <div class="elliplse_1">
+    <p class="ellipse-text ellipse-1-text">“NO physical branches!”</p>
+  </div>
+  <div class="elliplse_2">
+    <p class="ellipse-text ellipse-2-text">“NGB”</p>
+    <p class="ellipse-subscript">Made by professionals</p>
+  </div>
+  <div class="elliplse_3">
+    <p class="ellipse-text ellipse-3-text">“Еasy and secure banking”</p>
+  </div>
 </div>
 
 
