@@ -25,7 +25,7 @@ if ($result->num_rows == 1)
     $userBalance = $user['bal'];
 }
 
-readfile("../pages/transfer.html");
+readfile("../pages/transfer/transfer.html");
 
 $stmt->close();
 ?>
