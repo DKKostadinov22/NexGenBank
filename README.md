@@ -160,7 +160,7 @@
 
 |                       Clone the repo                                  |                   Open your browser and type localhost                 |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
-|  <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1183850353700114472/Screenshot_2147.png?ex=6589d58f&is=6577608f&hm=2ede48aa36e0228978f0e8ac67fbdcfa64e3f5ea27544ea1b7b4f75f47d199df&" alt="Home Page"> | <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1183850619530920167/Screenshot_2149.png?ex=6589d5ce&is=657760ce&hm=ee258f43411a02a44d33a967ef15ec3684a8e4f00112620d5adf2557bbd82bf2&" alt="Ratings">                             |
+|  <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1183850353700114472/Screenshot_2147.png?ex=6589d58f&is=6577608f&hm=2ede48aa36e0228978f0e8ac67fbdcfa64e3f5ea27544ea1b7b4f75f47d199df&" alt="Home Page"> | <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1184249371508879380/Screenshot_2154.png?ex=658b492c&is=6578d42c&hm=fd8f4c1760d658e16217cb6d382a65845008da119c0d00c12ccbc18f98016d79&" alt="Ratings">                             |
 </details>
     
 <h3 align="center"> Thank you and enjoy our site! <h3>
