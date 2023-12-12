@@ -30,7 +30,7 @@
             <a class="nav-link active" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../pages/About-Us.html">About Us</a>
+            <a class="nav-link" href="../pages/About-Us-verified.html">About Us</a>
           </li>
           <li class="nav-item" id="nav-item-icon">
             <img src="../images/pngegg.png">
