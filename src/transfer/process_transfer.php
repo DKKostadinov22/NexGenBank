@@ -73,19 +73,19 @@ if ($senderBalance >= $amount)
         $updatedSenderStmt->close(); //Close the statement
 
         //Redirect to a success page after transfer
-        readfile("../pages/transfer/transfer_success.html");
+        readfile("../../pages/transfer/transfer_success.html");
     }
     else 
     {
         //If receiver's IBAN doesn't exist in the DB, redirect to error page
-        readfile("../pages/transfer/transfer_fail.html");
+        readfile("../../pages/transfer/transfer_fail.html");
     }
 
     $checkReceiverStmt->close(); //Close the check receiver statement
 }
 else 
 {
-    readfile("../pages/transfer/transfer_no_bal.html");
+    readfile("../../pages/transfer/transfer_no_bal.html");
 }
 
 $updateSenderStmt->close(); //Close the update sender statement

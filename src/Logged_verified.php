@@ -115,7 +115,7 @@
                 <br><hr>
 
                 <!--Transfer button-->
-                <form action="../src/transfer.php" method="post">
+                <form action="../src/transfer/transfer.php" method="post">
                     <button class="money-buttons" type="submit">Transfer</button>
                 </form><br>
                 
