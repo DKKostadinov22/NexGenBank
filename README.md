@@ -143,9 +143,13 @@
 <li>
   <strong> Virtual Services:</strong>
         <ul>-As you don't have physical branches, emphasize the use of online and mobile banking services, reducing the need for customers to travel to physical locations, thus lowering carbon emissions.</ul>
-</li>    
- <h2 id="installation">Installation</h2>
-        
+</li>
+
+<!-- TABLE OF CONTENTS -->        
+<h2 id="installation">Installation</h2>
+
+<details open="open">
+    
 |                               Download Xampp                          |                     Open Xampp control panel and start Apache          |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 | <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1183844914061135872/Screenshot_2128.png?ex=6589d07e&is=65775b7e&hm=58888e94ccad1fddd9875df2934fd6754506b75ae75017b133d3c358ad59fd12&" alt="Home Page"> | <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1183846696573210664/Screenshot_2136.png?ex=6589d227&is=65775d27&hm=dc7ba47ae732d4bd71f88ed1ab615d6d82848c0299806be67fc87b60191707a7&" alt="Ratings">                             |
@@ -157,6 +161,7 @@
 |                       Clone the repo                                  |                   Open your browser and type localhost                 |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 |  <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1183850353700114472/Screenshot_2147.png?ex=6589d58f&is=6577608f&hm=2ede48aa36e0228978f0e8ac67fbdcfa64e3f5ea27544ea1b7b4f75f47d199df&" alt="Home Page"> | <img src="https://cdn.discordapp.com/attachments/1177346904477147277/1183850619530920167/Screenshot_2149.png?ex=6589d5ce&is=657760ce&hm=ee258f43411a02a44d33a967ef15ec3684a8e4f00112620d5adf2557bbd82bf2&" alt="Ratings">                             |
+</details>
     
 <h3 align="center"> Thank you and enjoy our site! <h3>
 <h4 align="center"> Made with ❤️</h4>
