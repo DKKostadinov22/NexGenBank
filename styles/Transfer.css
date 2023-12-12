@@ -1,6 +1,21 @@
 /*Link Inter Font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/*Scrollbar*/
+/* Width properties for the scroll bar */
+::-webkit-scrollbar 
+{
+  width: 10px;
+}
+
+/* Properties for the main scroll */
+::-webkit-scrollbar-thumb 
+{
+  background: #787474;
+
+  border-radius: 10px;
+}
+
 /* Navbar */
 .navbar-brand
 {
