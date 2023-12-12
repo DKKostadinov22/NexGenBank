@@ -44,36 +44,36 @@
   </div>
 </nav>
 
-  <!--Login Card-->
-  <div class="card text-center" id="card-body">
-    <div class="card-body">
-      <form action="./src/login.php" method="post">
-        <div class="container">
-          <h1>Login</h1>
-          <hr>
+<!--Login Card-->
+<div class="card text-center" id="card-body">
+  <div class="card-body">
+    <form action="./src/login.php" method="post">
+      <div class="container">
+        <!--Login Card Header-->
+        <h1>Login</h1>
+        <hr>
+        <form action="./src/login.php" method="post">
+        <!--Email input-->
+        <input type="text" placeholder="Email" name="email" id="email" required>
+        <br><br>
+        <!--Password input-->
+        <input type="password" placeholder="Password" name="pass" id="pass" required>
+        <br>
+        <!--Forgot Password -->
+        <a href="./pages/forgot-password.html" class="card-link" id="fp" style="font-weight: bold;">Forgot password</a>
+        <br>
+        <!--Submit button-->
+        <button type="submit" class="registerbtn" >Log in</button>
+        </form>
+        <!--Register.html link-->
+        <br><br>
+        <p id="or"><span>or</span></p>
+        <a href="./pages/Register.html" class="card-link">Create an Account</a>
 
-          <form action="./src/login.php" method="post">
-
-          <input type="text" placeholder="Email" name="email" id="email" required>
-          <br><br>
-
-          <input type="password" placeholder="Password" name="pass" id="pass" required>
-          <br>
-
-          <a href="./pages/forgot-password.html" class="card-link" id="fp" style="font-weight: bold;">Forgot password</a>
-          <br>
-
-          <button type="submit" class="registerbtn" >Log in</button>
-          </form>
-
-          <br><br>
-          <p id="or"><span>or</span></p>
-          <a href="./pages/Register.html" class="card-link">Create an Account</a>
-        
-        </div>
-      </form> 
-    </div>
+      </div>
+    </form> 
   </div>
+</div>
   
 <!--Eclipses-->
 <div class="ellipse_group">
